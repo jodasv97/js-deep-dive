@@ -1,15 +1,15 @@
 /**
- * EJERCICIO 1 — Igualdad estricta vs igualdad abstracta y tipos primitivos
- * Ejecuta:  node 01-fundamentos/ej1.js
+ * EXERCISE 1 — Strict vs Loose Equality and Primitives
+ * Execute:  node 01-fundamentos/ej1.js
  */
 
-// Igualdad estricta: compara sin coerción de tipos (recomendado)
+// Strict Equal: no type cohersion
 const isStrictEqual = (a, b) => Object.is(a, b); // Maneja bien NaN y -0/+0
 
-// Igualdad abstracta: permite coerción de tipos (evítalo en lógica crítica)
+// Loose Equal: allows type cohersion
 const isLooseEqual = (a, b) => a == b;
 
-// ¿Es primitivo? (string, number, boolean, null, undefined, symbol, bigint)
+// Is Primitive? (string, number, boolean, null, undefined, symbol, bigint)
 const isPrimitive = (v) => v === null || (typeof v !== 'object' && typeof v !== 'function');
 
 
