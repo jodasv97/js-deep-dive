@@ -1,16 +1,28 @@
 /**
- * EXERCISE 1 — Strict vs Loose Equality and Primitives
- * Execute:  node 01-fundamentos/ej1.js
+ * Ex1 — Strict vs Loose Equality & Primitive Detection
+ * TODOs:
+ * - Implement isStrictEqual(a, b) → use Object.is
+ * - Implement isLooseEqual(a, b) → use ==
+ * - Implement isPrimitive(v) → true for string, number, boolean, null, undefined, symbol, bigint
+ * - Log examples: NaN, -0/+0, 2 vs "2"
  */
 
-// Strict Equal: no type cohersion
-const isStrictEqual = (a, b) => Object.is(a, b); // Maneja bien NaN y -0/+0
+function isStrictEqual(a, b) {
+  // TODO: implement with Object.is
+  return Object.is(a, b);
+};
 
-// Loose Equal: allows type cohersion
-const isLooseEqual = (a, b) => a == b;
+function isLooseEqual(a, b) {
+  // TODO: implement with ==
+  return a == b;
+};
 
-// Is Primitive? (string, number, boolean, null, undefined, symbol, bigint)
-const isPrimitive = (v) => v === null || (typeof v !== 'object' && typeof v !== 'function');
+function isPrimitive(v) {
+  // TODO: implement primitive detection
+  const primitiveCheck = (v === null || v === undefined) ? true : (typeof(v) === 'object' || typeof(v) === 'function' ? false : true);
+  return primitiveCheck;
+};
+// TODO: test logs
 
 
 console.log('--- Strict Equal (Object.is) ---');
