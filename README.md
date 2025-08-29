@@ -16,7 +16,7 @@ Objectives
 ### 01 — Fundamentals
 - [x] Ex1: Strict vs Loose Equality & Primitive Detection
 - [x] Ex2: Closure Counter
-- [ ] Ex3: Deep Clone (objects/arrays)
+- [x] Ex3: Deep Clone (objects/arrays)
 
 ### 02 — Functions & Closures
 - [ ] Ex4: once(fn) — run only once
