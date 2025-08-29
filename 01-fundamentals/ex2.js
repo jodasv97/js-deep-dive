@@ -7,31 +7,28 @@
 
 function counter() {
   // TODO: use a closure to keep state
-}
+  let counter = 1;
+  return function() {
+    return counter++;
+  };
+};
 
 const c = counter();
 // TODO: test logs → c() → 1, c() → 2, c() → 3
 
+// --- Test harness for counter() ---
 
-const original = {
-  name: "Alice",
-  age: 30,
-  address: {
-    city: "Wonderland",
-    zip: "12345"
-  },
-  hobbies: ["reading", "chess"],
-  greet() {
-    console.log(`Hello, I'm ${this.name}`);
-  }
-};
+function expect(name, actual, expected) {
+  const ok = Object.is(actual, expected);
+  console.log(ok ? `✅ ${name}` : `❌ ${name} → got ${actual}, expected ${expected}`);
+}
 
-original.itself = original; // Circular reference
+const c1 = counter();
+expect("c1() first call", c1(), 1);
+expect("c1() second call", c1(), 2);
+expect("c1() third call", c1(), 3);
 
-// Deep Clone Function
-const clone = structuredClone(original);
-
-console.log('--- Original Object ---');
-console.log(original);
-console.log('--- Cloned Object ---');
-console.log(clone);
+const c2 = counter();
+expect("c2() first call", c2(), 1);
+expect("c1() fourth call", c1(), 4);
+expect("c2() second call", c2(), 2);

@@ -19,8 +19,8 @@ function isLooseEqual(a, b) {
 
 function isPrimitive(v) {
   // TODO: implement primitive detection
-  const primitiveCheck = (v === null || v === undefined) ? true : (typeof(v) === 'object' || typeof(v) === 'function' ? false : true);
-  return primitiveCheck;
+//   const primitiveCheck = (v === null || v === undefined) ? true : (typeof(v) === 'object' || typeof(v) === 'function' ? false : true);
+  return v === null || (typeof v !== 'function' && typeof v !== 'object');
 };
 // TODO: test logs
 
