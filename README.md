@@ -19,13 +19,13 @@ Objectives
 - [x] Ex3: Deep Clone (objects/arrays)
 
 ### 02 — Functions & Closures
-- [ ] Ex4: once(fn) — run only once
-- [ ] Ex5: `this` vs Arrow functions demonstration
-- [ ] Ex6: Reuse once with multiple functions
+- [x] Ex4: once(fn) — run only once
+- [x] Ex5: `this` vs Arrow functions demonstration
+- [x] Ex6: Reuse once with multiple functions
 
 ### 03 — Arrays & Objects
-- [ ] Ex7: Active users → names → count (filter/map/reduce)
-- [ ] Ex8: groupBy(array, key)
+- [x] Ex7: Active users → names → count (filter/map/reduce)
+- [x] Ex8: groupBy(array, key)
 - [ ] Ex9: indexById(arr) → { [id]: object }
 
 ### 04 — Async
