@@ -3,7 +3,7 @@
 Exercises repository to reinforce knowledge about JS fundamentals before moving to Node.js.
 Structured by topics, with optional tests and good Git practices.
 
---- 
+----
 
 Objectives
 
