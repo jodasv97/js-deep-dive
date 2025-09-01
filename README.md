@@ -26,11 +26,11 @@ Objectives
 ### 03 — Arrays & Objects
 - [x] Ex7: Active users → names → count (filter/map/reduce)
 - [x] Ex8: groupBy(array, key)
-- [ ] Ex9: indexById(arr) → { [id]: object }
+- [x] Ex9: indexById(arr) → { [id]: object }
 
 ### 04 — Async
-- [ ] Ex10: delay(ms)
-- [ ] Ex11: Promise.all vs Promise.allSettled (3 fake APIs)
+- [x] Ex10: delay(ms)
+- [x] Ex11: Promise.all vs Promise.allSettled (3 fake APIs)
 - [ ] Ex12: retry(fn, retries) with optional backoff
 
 ### 05 — Modules & Errors
